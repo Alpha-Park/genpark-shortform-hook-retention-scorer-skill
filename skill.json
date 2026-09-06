@@ -1,0 +1,36 @@
+{
+  "name": "genpark-shortform-hook-retention-scorer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - First-3-second shortform video hook retention scorer evaluating curiosity gaps, visual pacing cuts, and viral retention.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "viral-hooks",
+    "shortform-video",
+    "tiktok-reels",
+    "opus-clip",
+    "submagic"
+  ],
+  "inputs": {
+    "video_title": {
+      "type": "string"
+    },
+    "first_3sec_transcript": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "hook_audit_id": {
+      "type": "string"
+    },
+    "hook_viral_score": {
+      "type": "number"
+    },
+    "estimated_3sec_retention_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
